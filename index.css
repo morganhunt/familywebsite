@@ -1,0 +1,88 @@
+#header{
+	background-color: blue;
+	width: 100%;
+	height: 160px;
+}
+#header img{
+	position: relative;
+	top: 30px;
+	left: 30px;
+	float: left;
+	height: 100px;
+}
+#header p{
+	float: right;
+	position: relative;
+	right: 20px;
+}
+#header h1{
+	padding-top: 2em;
+	padding-left: 4em;
+	font-size: 300%;
+}
+
+
+#topnavigation{
+	width: 100%;
+	background-color: beige;
+	text-align: center;
+}
+#topnavigation table{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#topnavigation td{
+	padding-top: 10px;
+	font-size: 65%;
+}
+#topnavigation .border{
+	padding-top: 0px;
+	font-size: 25;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+#sidenavigation{
+	width: 10%;
+}
+#sidenavigation caption{
+	font-size: 230%;
+	text-align: left;
+}
+
+#content{
+	text-align: center;
+}
+iframe{
+
+}
+
+.page table{
+	width: 100%;
+}
+#content{
+	text-align: center;
+	background-color: orange;
+}
+
+
+/*Styling away the links*/
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: darkblue;
+}
+a:active{
+	text-decoration: none;
+}
+
