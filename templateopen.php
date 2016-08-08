@@ -1,6 +1,8 @@
 <div id="header">
 		<a href="home.php"><img src="images/logo.jpg"></a>
-		<p><a href="FAQ.php">FAQ</a>  <a href="login.php">Login</a></p>
+		<p><a href="FAQ.php">FAQ</a><br>
+		<a href="login.php">Login</a><br>
+		<a href="admin.php">Admin</a></p>
 		<h1>Hunt Family</h1>
 	</div>
 
@@ -25,19 +27,19 @@
 				<p>|</p>
 			</td>
 			<td>
-				<a href="externallink.php"><h2>Plex</h2></a>
+				<a href="externallink.php" target="_blank"><h2>Plex</h2></a>
 			</td>
 			<td class="border">
 				<p>|</p>
 			</td>
 			<td>
-				<a href="externallink.php"><h2>Music</h2></a>
+				<a href="externallink.php" target="_blank"><h2>Music</h2></a>
 			</td>
 			<td class="border">
 				<p>|</p>
 			</td>
 			<td>
-				<a href="externallink.php"><h2>Photos</h2></a>
+				<a href="http://darylleannhunt.zenfolio.com/" target="_blank"><h2>Photos</h2></a>
 			</td>
 			<td class="border">
 				<p>|</p>
@@ -70,10 +72,13 @@
 								<a href="create.php"><h3>Create!</h3></a>
 							</td></tr>
 							<tr><td>
-								<a href="externallink.php"><h3>Dropbox</h3></a>
+								<a href="externallink.php" target="_blank"><h3>Dropbox</h3></a>
 							</td></tr>
 							<tr><td>
 								<a href="business.php"><h3>Business</h3></a>
+							</td></tr>
+							<tr><td>
+								<a href="business.php"><h3>Social Media</h3></a>
 							</td></tr>
 						</table>
 					

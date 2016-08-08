@@ -3,13 +3,10 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<?php include('templateopen.php'); ?>
-		
-		<div id="content">
-			<p>This is where the CONTACT INFORMATION content goes.</p>
-			<iframe src="recipes/HeavenlyHalibut.pdf">
-		</div>
-
-	<?php include('templateclose.php'); ?>
+	<?php
+		include('controllers/contact.php');
+		$controller = new ContactController;
+		$controller -> invoke();
+	?>
 </body>
 </html>

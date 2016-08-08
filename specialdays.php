@@ -3,13 +3,10 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<?php include('templateopen.php'); ?>
-		
-		<div id="content">
-			<p>This is where the SPECIAL DAYS content goes.</p>
-			<iframe src="recipes/HeavenlyHalibut.pdf">
-		</div>
-
-	<?php include('templateclose.php'); ?>
+	<?php
+		include('controllers/specialday.php');
+		$controller = new SpecialDayController;
+		$controller -> invoke();
+	?>
 </body>
 </html>
