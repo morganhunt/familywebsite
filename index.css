@@ -47,24 +47,45 @@
 #sidenavigation{
 	width: 10%;
 }
-#sidenavigation caption{
-	font-size: 230%;
-	text-align: left;
+#sidebar{
+	background-color: white;
 }
+ul{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+#sidebar img{
+	height: 100px;
+
+}
+
 
 #content{
 	text-align: center;
 }
-iframe{
-
-}
-
 .page table{
 	width: 100%;
 }
 #content{
 	text-align: center;
 	background-color: orange;
+}
+
+
+#household{
+	text-align: center;
+}
+#household h2{
+	font-size: 2.5em;
+}
+#household img{
+	height: 50px;
+}
+#household table{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -85,4 +106,10 @@ a:hover{
 a:active{
 	text-decoration: none;
 }
+
+
+
+
+
+
 

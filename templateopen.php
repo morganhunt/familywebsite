@@ -1,5 +1,5 @@
 <div id="header">
-		<a href="home.php"><img src="images/logo.jpg"></a>
+		<a href="home.php"><img src="images/logo.png"></a>
 		<p><a href="FAQ.php">FAQ</a><br>
 		<a href="login.php">Login</a><br>
 		<a href="admin.php">Admin</a></p>
@@ -60,27 +60,17 @@
 		<table>
 			<tr>
 				<td id="sidenavigation">
-						<table>
-							<caption id="tabletitle">Keeping Up with the Hunts</caption>
-							<tr><td>
-								<a href="contactinfo.php"><h3>Contact Information</h3></a>
-							</td></tr>
-							<tr><td>
-								<a href="blogs.php"><h3>Blogs</h3></a>
-							</td></tr>
-							<tr><td>
-								<a href="create.php"><h3>Create!</h3></a>
-							</td></tr>
-							<tr><td>
-								<a href="externallink.php" target="_blank"><h3>Dropbox</h3></a>
-							</td></tr>
-							<tr><td>
-								<a href="business.php"><h3>Business</h3></a>
-							</td></tr>
-							<tr><td>
-								<a href="business.php"><h3>Social Media</h3></a>
-							</td></tr>
-						</table>
-					
+					<div id="sidebar">
+						<?php
+							include ('models/models.php');
+							$HouseholdList = HouseholdModel::getHouseholds();
+							echo "<ul>";
+							foreach($HouseholdList as $household){
+								echo "<li><a href='household.php?id=".$household['id']."'>";
+								echo "<img src='".$household['imgurl']."'></a></li>";
+							}
+							echo "</ul>";
+						?>
+					</div>
 				</td>
 				<td>
