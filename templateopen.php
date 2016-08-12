@@ -1,5 +1,5 @@
 <div id="header">
-		<a href="home.php"><img src="images/logo.png"></a>
+		<a href="index.php"><img src="images/logo.png"></a>
 		<p><a href="FAQ.php">FAQ</a><br>
 		<a href="login.php">Login</a><br>
 		<a href="admin.php">Admin</a></p>
@@ -73,4 +73,4 @@
 						?>
 					</div>
 				</td>
-				<td>
+				<td id="middle">

@@ -22,6 +22,7 @@
 }
 
 
+
 #topnavigation{
 	width: 100%;
 	background-color: beige;
@@ -59,6 +60,9 @@ ul{
 	height: 100px;
 
 }
+#middle{
+	vertical-align: text-top;
+}
 
 
 #content{
@@ -75,6 +79,7 @@ ul{
 
 #household{
 	text-align: center;
+	padding-top: .5em;
 }
 #household h2{
 	font-size: 2.5em;
@@ -85,7 +90,7 @@ ul{
 #household table{
 	width: 50%;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; 
 }
 
 
