@@ -1,12 +1,8 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
 <?php
 	//print_r($_GET);
 	include('templateopen.php');
 
-
+	if($_SESSION["login"] == true):
 	if(isset($_GET['id'])){
 		$household = HouseholdModel::getByID($_GET['id']);
 		//print_r($household);
@@ -28,8 +24,11 @@
 	else{
 		echo 'error';
 	}
+	endif;
+	if($_SESSION["login"] != true){
+		echo "You need to login before you can view this page.";
+	}
 
 
 	include('templateclose.php');
 ?>
-</html>

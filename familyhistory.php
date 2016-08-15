@@ -1,15 +1,8 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-	<?php include('templateopen.php'); ?>
-		
-		<div id="content">
-			<p>This is where the FAMILY HISTORY content goes.</p>
-			<iframe src="recipes/HeavenlyHalibut.pdf">
-		</div>
+<?php include('templateopen.php'); ?>
+	
+	<div id="content">
+		<br><a href="content/BathroomBook.pdf">Download the Bathroom Book</a><br><br>
+		<iframe src="content/BathroomBook.pdf"></iframe>
+	</div>
 
-	<?php include('templateclose.php'); ?>
-</body>
-</html>
+<?php include('templateclose.php'); ?>

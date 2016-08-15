@@ -47,6 +47,7 @@
 
 #sidenavigation{
 	width: 10%;
+	/*vertical-align: text-top;*/
 }
 #sidebar{
 	background-color: white;
@@ -61,6 +62,9 @@ ul{
 
 }
 #middle{
+	/*vertical-align: text-top;*/
+}
+td{
 	vertical-align: text-top;
 }
 
@@ -74,6 +78,10 @@ ul{
 #content{
 	text-align: center;
 	background-color: orange;
+}
+iframe{
+	width: 550px;
+	height: 700px;
 }
 
 

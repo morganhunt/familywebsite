@@ -1,16 +1,11 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-	<?php
-		include('templateopen.php');
+<?php
+	include('templateopen.php');
 
-		include('controllers/household.php');
-		$controller = new HouseholdController;
-		$controller -> invokeHouseholds();
+	/*include('controllers/household.php');
+	$controller = new HouseholdController;
+	$controller -> invokeHouseholds();*/
+	$str = "wedobravethings";
+	echo md5($str);
 
-		include('templateclose.php');
-	?>
-</body>
-</html>
+	include('templateclose.php');
+?>
