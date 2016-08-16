@@ -1,4 +1,3 @@
-<html>
 <?php
 
 	$servername = "familywebsitedb.cczmur0bdurb.us-west-2.rds.amazonaws.com:3306";
@@ -102,4 +101,3 @@
 	}
 
 ?>
-</html>

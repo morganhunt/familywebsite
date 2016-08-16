@@ -1,3 +1,21 @@
+<?php session_start();
+include_once ('models/models.php'); ?>
+<?php
+	if(isset($_POST) && isset($_POST["password"])){
+		$checkthis = md5($_POST["password"]);
+		$result = $conn->query("SELECT * FROM user");
+		$user = $result->fetch_all(MYSQLI_ASSOC)[0];
+		if ($checkthis == $user["password"]){
+			$_SESSION["login"] = true;
+			if(isset($_GET['url'])){
+				header('Location: '.$_GET['url']);
+				die();
+			}
+		}
+	}
+?>
+
+
 <?php include ('templateopen.php'); ?>
 
 <div id="login">
@@ -7,18 +25,6 @@
 		<input type="password" name="password">
 		<input type="submit" value="Submit">
 	</form>
-
-	<?php
-		if(isset($_POST) && isset($_POST["password"])){
-			$checkthis = md5($_POST["password"]);
-			$result = $conn->query("SELECT * FROM user");
-			$user = $result->fetch_all(MYSQLI_ASSOC)[0];
-			if ($checkthis == $user["password"]){
-				$_SESSION["login"] = true;
-			}
-		}
-		print_r($_SESSION);
-	?>
 </div>
 
 <?php include ('templateclose.php'); ?>

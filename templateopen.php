@@ -1,7 +1,7 @@
-<?php session_start(); ?>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="images/familylogo.png">
 </head>
 <body>
 	<div id="header">
@@ -68,7 +68,7 @@
 					<td id="sidenavigation">
 						<div id="sidebar">
 							<?php
-								include ('models/models.php');
+								include_once ('models/models.php');
 								$HouseholdList = HouseholdModel::getHouseholds();
 								echo "<ul>";
 								foreach($HouseholdList as $household){

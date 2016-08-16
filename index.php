@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include('templateopen.php'); ?>
 	
 	<div id="content">

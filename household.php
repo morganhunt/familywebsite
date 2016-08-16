@@ -1,3 +1,13 @@
+<?php session_start(); ?>
+<?php
+	if($_SESSION["login"] != true){
+		if(isset($_GET['id'])){
+			$link = "household.php?id=".$_GET['id'];
+			header('Location: login.php?url='.urlencode($link));
+			die();
+		}
+	}
+?>
 <?php
 	//print_r($_GET);
 	include('templateopen.php');
@@ -25,9 +35,6 @@
 		echo 'error';
 	}
 	endif;
-	if($_SESSION["login"] != true){
-		echo "You need to login before you can view this page.";
-	}
 
 
 	include('templateclose.php');

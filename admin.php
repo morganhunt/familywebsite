@@ -1,6 +1,11 @@
-<?php include('templateopen.php'); 
+<?php session_start(); ?>
+<?php 
+if($_SESSION["login"] != true){
+	header('Location: login.php?url=admin.php');
+	die();
+}
 
-
+include('templateopen.php'); 
 if($_SESSION["login"] == true):
 ?>
 	
@@ -13,8 +18,6 @@ if($_SESSION["login"] == true):
 
 <?php
 endif;
-if($_SESSION["login"] != true){
-	echo "You need to login before you can view this page.";
-}
+
 
 include('templateclose.php'); ?>
