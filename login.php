@@ -4,7 +4,7 @@
 	If you don't have the password, ask LeAnn for it.<br><br>
 	<form method="post">
 		Password:<br>
-		<input type="text" name="password">
+		<input type="password" name="password">
 		<input type="submit" value="Submit">
 	</form>
 
