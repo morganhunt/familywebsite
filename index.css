@@ -61,8 +61,8 @@ ul{
 	height: 100px;
 
 }
-#middle{
-	/*vertical-align: text-top;*/
+td#middle{
+	vertical-align: text-top;
 	padding-top: 0px;
 }
 
@@ -76,7 +76,6 @@ ul{
 #content{
 	text-align: center;
 	background-color: orange;
-	margin-top: -20px;
 }
 iframe{
 	width: 550px;
