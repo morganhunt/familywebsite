@@ -77,6 +77,71 @@
 			$this -> name = $name;
 			$this -> birthday = $birthday;
 		}
+
+		public static function getByHousehold($householdid){
+			global $conn;
+			$result = $conn->query("SELECT * FROM person where person.householdid = ".$householdid);
+			if($result){
+				return ($result->fetch_all(MYSQLI_ASSOC));
+			}
+			else{
+				return NULL;
+			}
+		}
+
+		public static function getSpecialDays(){
+			global $conn;
+			$resultBDay = $conn->query("SELECT name, birthday FROM person");
+			if($resultBDay){
+				$birthdays = $resultBDay->fetch_all(MYSQLI_ASSOC);
+				$resultAnniv = $conn->query("SELECT title, anniversary FROM household where household.anniversary IS NOT NULL");
+				if($resultAnniv){
+					$anniversaries = $resultAnniv->fetch_all(MYSQLI_ASSOC);
+					$specialdays = array_merge($birthdays, $anniversaries);
+					return $specialdays;
+				}
+				else{
+					return NULL;
+				}
+			}
+			else{
+				return NULL;
+			}
+		}
+
+		public static function getMonth($day){
+			$date = isset($day['birthday'])
+			? $day['birthday']
+			: $day['anniversary'];
+			return substr($date, 5, 2);
+		}
+
+		public static function getDay($day){
+			$date = isset($day['birthday'])
+			? $day['birthday']
+			: $day['anniversary'];
+			return substr($date, 8, 2);
+		}
+
+		public static function getYear($day){
+			$date = isset($day['birthday'])
+			? $day['birthday']
+			: $day['anniversary'];
+			return substr($date, 0, 4);
+		}
+
+		public static function makeDate($day){
+			$date = isset($day['birthday'])
+			? date_create($day['birthday'])
+			: date_create($day['anniversary']);
+			return $date;
+		}
+		public static function getDate($day){
+			$date = isset($day['birthday'])
+			? $day['birthday']
+			: $day['anniversary'];
+			return $date;
+		}
 	}
 
 
@@ -98,6 +163,24 @@
 			$this -> displaytext = $displaytext;
 			$this -> priority = $priority;
 		}
+
+		public static function getByPerson($personid){
+			global $conn;
+			$result = $conn->query("SELECT * FROM attachment where attachment.personid = ".$personid);
+			if($result){
+				return ($result->fetch_all(MYSQLI_ASSOC));
+			}
+			else{
+				return NULL;
+			}
+		}
 	}
 
 ?>
+
+
+
+
+
+
+

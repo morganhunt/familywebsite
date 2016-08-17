@@ -63,20 +63,15 @@
 		</div>
 
 		<div class="page">
-			<table>
-				<tr>
-					<td id="sidenavigation">
-						<div id="sidebar">
-							<?php
-								include_once ('models/models.php');
-								$HouseholdList = HouseholdModel::getHouseholds();
-								echo "<ul>";
-								foreach($HouseholdList as $household){
-									echo "<li><a href='household.php?id=".$household['id']."'>";
-									echo "<img src='".$household['imgurl']."'></a></li>";
-								}
-								echo "</ul>";
-							?>
-						</div>
-					</td>
-					<td id="middle">
+			<div id="sidebar">
+				<?php
+					include_once ('models/models.php');
+					$HouseholdList = HouseholdModel::getHouseholds();
+					echo "<ul>";
+					foreach($HouseholdList as $household){
+						echo "<li><a href='household.php?id=".$household['id']."'>";
+						echo "<img src='".$household['imgurl']."'></a></li>";
+					}
+					echo "</ul>";
+				?>
+			</div>
