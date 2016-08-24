@@ -2,9 +2,9 @@
 <?php include('templateopen.php'); ?>
 	
 	<div id="content">
-		<form action="getfile.php" method="post" enctype="multipart/form-data"><br>
-			Select File: <input type='file' name='uploadFile'>
-			<br><input type='submit' value='Upload File'>
+		<form id='recipieForm' action="getfile.php" method="post" enctype="multipart/form-data"><br>
+			Upload Your Own Recipe: <br><input id='uploadbutton' type='file' name='uploadFile' onChange='document.getElementById("recipieForm").submit()'>
+			<br><br><br>
 		</form>
 
 		<?php

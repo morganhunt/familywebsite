@@ -18,7 +18,7 @@ include_once ('models/models.php'); ?>
 
 <?php include ('templateopen.php'); ?>
 
-<div id="login">
+<div id="content">
 	If you don't have the password, ask LeAnn for it.<br><br>
 	<form method="post">
 		Password:<br>

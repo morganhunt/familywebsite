@@ -2,8 +2,7 @@
 <?php include('templateopen.php'); ?>
 	
 	<div id="content">
-		<p>This is where the HOME content goes.</p>
-		<iframe src="recipes/HeavenlyHalibut.pdf">
+		<iframe src="http://huntfamilyinfo.wordpress.com" width="100%" height="830px"></iframe>
 	</div>
 
 <?php include('templateclose.php'); ?>

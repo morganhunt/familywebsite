@@ -6,7 +6,7 @@
 
 
 	$now = date('Y');
-	echo $now;
+	echo "<br><b>".$now."</b><br><br><br>";
 
 
 	$specialdays = PersonModel::getSpecialDays();
@@ -29,10 +29,10 @@
 		$name = isset($day['name'])
 			? $day['name']
 			: $day['title'];
-		echo "<tr><td>".date("M j", $date->getTimeStamp())."</td>";
-		echo "<td>".($now-$year)."</td>";
-		echo "<td>".$type."</td>";
-		echo "<td>".$name."</td></tr>";
+		echo "<tr><td id='datecolumn'>".date("M j", $date->getTimeStamp())."</td>";
+		echo "<td id='yearcolumn'>".($now-$year)."</td>";
+		echo "<td id='typecolumn'>".$type."</td>";
+		echo "<td id='namecolumn'>".$name."</td></tr>";
 	}
 	echo "</table>";
 

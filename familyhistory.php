@@ -2,8 +2,10 @@
 <?php include('templateopen.php'); ?>
 	
 	<div id="content">
-		<br><a href="content/BathroomBook.pdf">Download the Bathroom Book</a><br><br>
-		<iframe src="content/BathroomBook.pdf"></iframe>
+		Click icon to open pdf
+		<ul id="famhistorylist">
+			<li><a href='content/BathroomBook.pdf' target='_blank'><img src='content/BathroomBookThumbnail.png'></a></li>
+		</ul>
 	</div>
 
 <?php include('templateclose.php'); ?>
