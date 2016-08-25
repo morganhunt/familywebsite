@@ -9,7 +9,7 @@
 			<p><a href="FAQ.php">FAQ</a><br>
 			<a href="login.php">Login</a><br>
 			<a href="admin.php">Admin</a></p>
-			<h1>Hunt Family</h1>
+			<img id="headerimage" src="images/familyheader.png">
 		</div>
 
 		<div id="topnavigation">
@@ -33,7 +33,7 @@
 					<p>|</p>
 				</td>
 				<td>
-					<a href="externallink.php" target="_blank"><h2>Plex</h2></a>
+					<a href="http://plex.tv" target="_blank"><h2>Movies</h2></a>
 				</td>
 				<td class="border">
 					<p>|</p>

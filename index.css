@@ -1,11 +1,11 @@
 #header{
 	background-color: white;
 	width: 100%;
-	height: 80px;
+	height: 120px;
 }
 #header img{
 	position: relative;
-	top: 5px;
+	top: 30px;
 	left: 30px;
 	float: left;
 	height: 120px;
@@ -19,6 +19,13 @@
 	padding-top: .5em;
 	padding-left: 4em;
 	font-size: 300%;
+}
+img#headerimage{
+	position: relative;
+	top: 0px;
+	float: left;
+	left: 3em;/*
+	height: 160px;*/
 }
 
 
@@ -53,7 +60,7 @@
 	background-color: white;
 	width: 105px;
 	position: absolute;
-	top: 129px;
+	top: 169px;
 	/*z-index: -1;*/
 }
 #sidebar ul{
@@ -67,7 +74,11 @@
 }
 #sidebar img{
 	height: 100px;
-
+}
+#sidebar img:hover{
+	position: relative;
+	top: -3px;
+	right: -3px;
 }
 td#middle{
 	vertical-align: text-top;
