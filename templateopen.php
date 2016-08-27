@@ -9,7 +9,7 @@
 			<p id="topright"><!-- <a href="FAQ.php">FAQ</a><br> -->
 			<a href="login.php">Login</a><br>
 			<a href="admin.php">Admin</a></p>
-			<img id="headerimage" src="images/familyheader.png">
+			<a href="index.php"><img id="headerimage" src="images/familyheader.png"></a>
 		</div>
 
 		<div id="topnavigation">
