@@ -11,7 +11,7 @@
 			//$dir = '/familywebsite/recipes/';
 			foreach (glob("recipes/*.pdf") as $filename){
 				$file = substr($filename, 8);
-				echo '<a href="'.$filename.'" target="_blank">'.substr($file, 0, -4).'</a><br>';
+				echo '<a id="recipe" href="'.$filename.'" target="_blank">'.substr($file, 0, -4).'</a><br>';
 			}
 		?>
 	</div>

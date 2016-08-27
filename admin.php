@@ -10,10 +10,9 @@ if($_SESSION["login"] == true):
 ?>
 	
 	<div id="content">
-		<p>This is where the ADMIN content goes.</p>
-		<h2>Upload Contacts</h2>
+		<h2>Admin Directions for Mom</h2>
+		<b>Updating the database</b>
 
-		<h2> Upload Special Days</h2>
 	</div>
 
 <?php

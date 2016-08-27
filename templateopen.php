@@ -4,9 +4,9 @@
 	<link rel="icon" href="images/familylogo.png">
 </head>
 <body>
-	<div id="header">
-			<a href="index.php"><img src="images/familylogo.png"></a>
-			<p><a href="FAQ.php">FAQ</a><br>
+	<div id="header"><!-- 
+			<a href="index.php"><img src="images/familylogo.png"></a> -->
+			<p id="topright"><!-- <a href="FAQ.php">FAQ</a><br> -->
 			<a href="login.php">Login</a><br>
 			<a href="admin.php">Admin</a></p>
 			<img id="headerimage" src="images/familyheader.png">
